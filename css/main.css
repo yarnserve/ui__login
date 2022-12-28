@@ -96,6 +96,7 @@ body {
   display: block;
   text-align: center;
   line-height: 40px;
+  font-size: 18px;
 }
 
 .left .input_box {
@@ -116,12 +117,32 @@ body {
   border: 1px solid var(--mid);
 }
 
+.left .input_box .inputs input:focus {
+  outline: none;
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
+}
+
 .left .input_box .input_text {
   margin-top: 16px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left .input_box .input_text a {
+  color: var(--accent);
+}
+
+.left .input_box .input_text a:hover {
+  text-decoration: underline;
 }
 
 .left .btns {
   /* margin-top: 50px; */
+  display: flex;
+  justify-content: space-between;
 }
 
 /* right */
