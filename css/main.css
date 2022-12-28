@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #1a2e35;
+  --accent: #fe5454;
+  --light: #f7f8f9;
+  --mid: #c5c5c5;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--primary);
+}
+
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.input_container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.left {
+  width: 560px;
+  height: 700px;
+  background-color: #c5c5c5;
+}
+.right {
+  width: 440px;
+  height: 700px;
+  background-color: #fe5454;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.right .sale_box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  color: #fff;
+  text-align: center;
+  transform: translateX(-50%);
+  background-color: red;
+}
+
+.right .sale_box h2 {
+  width: 152px;
+  height: 152px;
+  font-size: 64px;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 152px;
+  border-radius: 152px;
+}
+
+.right img {
+  width: 440px;
+  display: block;
+}
