@@ -46,6 +46,8 @@ body {
   height: 700px;
   background-color: #c5c5c5;
 }
+
+/* right */
 .right {
   width: 440px;
   height: 700px;
@@ -58,12 +60,12 @@ body {
 
 .right .sale_box {
   position: absolute;
-  top: 0;
+  top: 223px;
   left: 50%;
   color: #fff;
   text-align: center;
   transform: translateX(-50%);
-  background-color: red;
+  width: 280px;
 }
 
 .right .sale_box h2 {
@@ -74,9 +76,31 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   line-height: 152px;
   border-radius: 152px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
 .right img {
   width: 440px;
   display: block;
+}
+
+.right .dots {
+  display: flex;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  gap: 12px;
+  transform: translateX(-50%);
+}
+
+.right .dots li {
+  width: 16px;
+  height: 16px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+}
+
+.right .dots li.active {
+  background-color: #fff;
 }
