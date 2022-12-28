@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600&display=swap");
 
 * {
   box-sizing: border-box;
@@ -13,6 +13,22 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.btn {
+  width: 200px;
+  height: 60px;
+  border: 1px solid var(--accent);
+  background-color: var(--accent);
+  color: #fff;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn_line {
+  background-color: #fff;
+  color: var(--accent);
 }
 
 :root {
@@ -40,11 +56,72 @@ body {
   width: 1000px;
   margin: 0 auto;
   display: flex;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.12);
+  border-radius: 20px;
 }
+
 .left {
   width: 560px;
   height: 700px;
-  background-color: #c5c5c5;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  padding: 80px 66px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .input_top {
+  margin-bottom: auto;
+}
+
+.left .input_top h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.left .input_top .sns {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+}
+
+.left .input_top .sns li a {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--primary);
+  border-radius: 40px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}
+
+.left .input_box {
+  margin-top: 34px;
+  margin-bottom: 50px;
+}
+
+.left .input_box .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.left .input_box .inputs input {
+  font-size: 20px;
+  padding: 15px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--mid);
+}
+
+.left .input_box .input_text {
+  margin-top: 16px;
+}
+
+.left .btns {
+  /* margin-top: 50px; */
 }
 
 /* right */
